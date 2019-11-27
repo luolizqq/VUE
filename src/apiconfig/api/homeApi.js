@@ -5,3 +5,6 @@ export function login(inData){
     console.log("登录")
     return fetch('/service/ma/login',params)
 }
+export function queryOrgPowerName(params){
+    return fetch('/service/ma/org/queryOrgPowerName',params)
+}

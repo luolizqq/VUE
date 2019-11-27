@@ -6,7 +6,6 @@
     书本个数{{count}}
     <button @click="ADD_BOOK({name:'水浒传',price:32})">添加</button>
     <button @click='DEL_BOOK({name:"水浒传"})'>减少</button>
-    <mt-button type="primary" size="small" @click="isShow =!isShow">toggle</mt-button>
     <transition>
         <div class="box" v-if="isShow"></div>
     </transition>

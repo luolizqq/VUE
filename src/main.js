@@ -5,13 +5,14 @@ import App from './App';
 import router from './router';
 import Vuex from "vuex";
 import store from "./store";
-import Mint from "mint-ui";
-import 'mint-ui/lib/style.css' ;
+// import Mint from "mint-ui";
+// import 'mint-ui/lib/style.css' ;
 import '../static/js/flexible.js';
-Vue.use(Mint)
+import FastClick from  "fastclick"
+// Vue.use(Mint)
 Vue.config.productionTip = false
 Vue.use(Vuex)
-
+FastClick.attach(document.body)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

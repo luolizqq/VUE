@@ -34,7 +34,7 @@ import axios from 'axios'
       localStorage.removeItem('token')          // token过期，移除token
        // 进行重新登录操作
      } else {
-       return Promise.resolve(response)
+       return Promise.resolve(response.data)
      }
    },
    error => {
